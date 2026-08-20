@@ -23,6 +23,9 @@ export class User {
   @Column({ type: 'boolean', default: true })
   isActive!: boolean;
 
+  @Column({ type: 'varchar', length: 20, nullable: true })
+phone?: string;
+
   @CreateDateColumn({ type: 'timestamp' })
   createdAt!: Date;
 
