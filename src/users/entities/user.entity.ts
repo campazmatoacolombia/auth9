@@ -18,7 +18,7 @@ export class User {
   email!: string;
 
   @Column({ type: 'varchar', length: 255, select: false })
-  password!: string;
+  contraseña!: string;
 
   @Column({ type: 'boolean', default: true })
   isActive!: boolean;
