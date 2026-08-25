@@ -5,7 +5,7 @@ export class CreateUserDto {
   @ApiProperty({ example: 'Juan Perez', description: 'Nombre completo del usuario' })
   @IsString()
   @MaxLength(100)
-  name!: string;
+  nombre!: string;
 
   @ApiProperty({ example: 'juan@test.com', description: 'Correo electrónico único' })
   @IsEmail()
@@ -17,6 +17,7 @@ export class CreateUserDto {
   @MinLength(6)
   @MaxLength(255)
   contraseña!: string;
+
 
   @ApiPropertyOptional({ example: true, description: 'Si el usuario está activo' })
   @IsOptional()
