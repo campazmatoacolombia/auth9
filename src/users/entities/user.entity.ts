@@ -29,6 +29,9 @@ export class User {
    @Column({ type: 'varchar', length: 20, nullable: true })
  test?: string;
 
+ @Column({ type: 'varchar', length: 20, nullable: true })
+ test2?: string;
+
 
   @CreateDateColumn({ type: 'timestamp' })
   createdAt!: Date;
