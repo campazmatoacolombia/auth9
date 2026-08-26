@@ -26,6 +26,10 @@ export class User {
   @Column({ type: 'varchar', length: 20, nullable: true })
  phone?: string;
 
+   @Column({ type: 'varchar', length: 20, nullable: true })
+ test?: string;
+
+
   @CreateDateColumn({ type: 'timestamp' })
   createdAt!: Date;
 
