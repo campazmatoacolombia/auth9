@@ -12,7 +12,7 @@ export class User {
   id!: string;
 
   @Column({ type: 'varchar', length: 100 })
-  name!: string;
+  nombre!: string;
 
   @Column({ type: 'varchar', length: 150, unique: true })
   email!: string;
@@ -24,10 +24,15 @@ export class User {
   isActive!: boolean;
 
   @Column({ type: 'varchar', length: 20, nullable: true })
-phone?: string;
+ phone?: string;
+
+   @Column({ type: 'varchar', length: 20, nullable: true })
+ test?: string;
+
 
   @CreateDateColumn({ type: 'timestamp' })
   createdAt!: Date;
+
 
   @UpdateDateColumn({ type: 'timestamp' })
   updatedAt!: Date;
